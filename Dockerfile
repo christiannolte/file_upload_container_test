@@ -11,7 +11,7 @@ COPY index.html /var/www/html/
 #COPY upload.php /usr/share/nginx/html/
 COPY upload.php /var/www/html/
 RUN mkdir -p /var/www/html/uploads
-RUN CHMOD 777 /var/www/html/uploads
+RUN chmod 777 /var/www/html/uploads
 # Expose port 80
 EXPOSE 8080
 
