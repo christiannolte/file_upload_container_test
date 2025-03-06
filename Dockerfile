@@ -12,6 +12,6 @@ COPY index.html /var/www/html/
 COPY upload.php /var/www/html/
 
 # Expose port 80
-EXPOSE 80
+EXPOSE 8080
 
 # By default, the base nginx image runs nginx, so no CMD needed.
