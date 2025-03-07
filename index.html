@@ -7,7 +7,7 @@
     <hr>
     <h1>Upload a File for stations</h1>
     <form action="/upload_stations.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" />
+        <input type="file" name="file" accept=".xlsx,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"/>
         <input type="submit" value="Upload" />
     <hr>
 </form>
