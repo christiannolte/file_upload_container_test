@@ -1,4 +1,6 @@
 <?php
+echo '<html><body><button onclick="history.back()">Go Back</button>';
+
 // Simple example for handling file upload in PHP
 if ($_FILES["file"]["error"] === UPLOAD_ERR_OK) {
     $tmp_name = $_FILES["file"]["tmp_name"];
@@ -8,4 +10,5 @@ if ($_FILES["file"]["error"] === UPLOAD_ERR_OK) {
 } else {
     echo "File upload error!";
 }
+echo '</body></html>';
 ?>
