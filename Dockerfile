@@ -10,9 +10,12 @@ COPY index.html /var/www/html/
 # Copy your upload.php into the default NGINX html folder
 #COPY upload.php /usr/share/nginx/html/
 COPY upload_stations.php /var/www/html/
+
 RUN mkdir -p /var/www/html/uploads
-RUN chmod 777 /var/www/html/uploads
-run rm /var/www/html/index.php
+RUN mkdir -p /var/www/html/uploads/stations
+RUN chmod 777 /var/www/html/uploads/stations
+
+RUN rm /var/www/html/index.php
 # Expose port 80
 EXPOSE 8080
 
