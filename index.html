@@ -7,9 +7,41 @@
     <hr>
     <h1>Upload a File for stations</h1>
     <form action="/upload_stations.php" method="POST" enctype="multipart/form-data">
-        <input type="file" name="file" accept=".xlsx,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel"/>
+        <input type="file" name="file"
+            accept=".xlsx,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" />
         <input type="submit" value="Upload" />
+        <hr>
     <hr>
-</form>
+    <h1>Upload a File for stop points</h1>
+    <form action="/upload_stoppoints.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"
+            accept=".xlsx,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" />
+        <input type="submit" value="Upload" />
+        <hr>
+    <hr>
+    <h1>Upload a File for geo fences</h1>
+    <form action="/upload_geofences.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"
+            accept=".xlsx,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" />
+        <input type="submit" value="Upload" />
+        <hr>
+
+    <hr>
+    <h1>Upload a File for stations by routes</h1>
+    <form action="/upload_stationsbyroutes.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"
+            accept=".xlsx,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" />
+        <input type="submit" value="Upload" />
+        <hr>
+
+    <hr>
+    <h1>Upload a File for route poi</h1>
+    <form action="/upload_routepoi.php" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"
+            accept=".xlsx,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" />
+        <input type="submit" value="Upload" />
+        <hr>
+
+    </form>
 </body>
 </html>
