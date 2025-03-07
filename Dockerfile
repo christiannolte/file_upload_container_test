@@ -9,9 +9,10 @@ FROM erseco/alpine-php-webserver
 COPY index.html /var/www/html/
 # Copy your upload.php into the default NGINX html folder
 #COPY upload.php /usr/share/nginx/html/
-COPY upload.php /var/www/html/
+COPY upload_stations.php /var/www/html/
 RUN mkdir -p /var/www/html/uploads
 RUN chmod 777 /var/www/html/uploads
+run rm /var/www/html/index.php
 # Expose port 80
 EXPOSE 8080
 
